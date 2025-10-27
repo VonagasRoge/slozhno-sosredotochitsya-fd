@@ -1,15 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: var(--main-bg-img, url(../images/cover-image-dark.png));
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: var(--main-bg-color, #000028);
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font-family, "IBM Plex mono", monospace);
   font-size: 18px;
   line-height: 23.4px;
+  background-color: var(--main-bg-color, #000028);
+  background-image: var(--main-bg-img, url(../images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .link {
@@ -74,9 +74,9 @@
 /* header */
 .header {
   display: grid;
+  align-items: start;
   padding: clamp(10px, 7.57px + 0.65vw, 20px);
   min-block-size: 100vh;
-  align-items: start;
 }
 
 .header__theme-menu {
@@ -210,9 +210,9 @@
 
 .footer {
   display: grid;
+  place-items: center;
   padding: clamp(10px, 7.57px + 0.65vw, 20px);
   min-block-size: 100vh;
-  place-items: center;
 }
 
 .footer-title {

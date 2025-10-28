@@ -17,7 +17,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid var(--text-color, #f1b2ce);
 }
 
 .link:focus {
@@ -177,6 +177,10 @@
 
 .section-how__subtitle {
   margin-block-end: 20px;
+}
+
+.section-how__article-title {
+  font-weight: normal;
 }
 
 .articles-list {
